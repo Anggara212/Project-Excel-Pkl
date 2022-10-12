@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Santri;
 use App\Exports\SantriExport;
 use Maatwebsite\Excel\Facades\Excel;
+use \Illuminate\Pagination\Paginator;
 
 class SantriController extends Controller
 {

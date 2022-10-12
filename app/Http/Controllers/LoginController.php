@@ -31,6 +31,7 @@ class LoginController extends Controller
         user::create([
             'name' => $request->name,
             'email' => $request->email,
+            'nipd' => $request->nipd,
             'password' => bcrypt($request->password),
             'remember_token' => Str::random(60)
         ]);

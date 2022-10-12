@@ -9,19 +9,20 @@
 <div class="container">
   <div class="card">
   <div class="card-body">
-  <h1 class="mx-auto">Data Santri</h1>
-  <a href="{{route('tambahSantri')}}" type="button" class="btn btn-success mt-2 mr-6">Tambah +</a>
+  <h1 class="mx-2">Data Santri</h1>
+  <a href="{{route('tambahSantri')}}" type="button" class="btn btn-success  ">Tambah +</a>
   <a href="Santri/export/" class="btn btn-success my-3" target="_blank">EXPORT EXCEL</a>
   <div class="row">
-      <table class="table mx-auto">
+      <table class="table mx-4">
           <thead>
               <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Nama Lengkap</th>
-                  <th scope="col">nik</th>
-                  <th scope="col">alamat</th>
-                  <th scope="col">Jenis Kelamin</th>
-                  <th scope="col">Tempat lahir</th>
+                  <td scope="col">#</td>
+                  <td scope="col">Nama Lengkap</td>
+                  <td scope="col">nik</td>
+                  <td scope="col">alamat</td>
+                  <td scope="col">Jenis Kelamin</td>
+                  <td scope="col">Tempat lahir</td>
+                  <td scope="col">action</td>
               </tr>   
           </thead>
           <tbody>
@@ -42,7 +43,7 @@
                           @method('delete')
                           <button type="submit" class="btn btn-warning">Delete</button>
                       </form>
-                     <a href="/tampilandata/{{$row->id}}" type="submit" class="btn btn-danger">Edit</a>
+                     <a href="/tampilandata/{{$row->id}}" type="submit" class="btn btn-danger ml-2">Edit</a>
                   </td>
               </tr>
               @endforeach

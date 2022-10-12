@@ -1,91 +1,86 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Login 05</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="../assets 2/css/style.css">
-
-    {{-- <style>
-        .img
-        {
-            background-image: url(/assests 2/images/bg-1.jpg)
-        }
-    </style> --}}
-
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Skydash Admin</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="assets 3/vendors/feather/feather.css">
+  <link rel="stylesheet" href="assets 3/vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="assets 3/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="assets 3/css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="assets 3/images/favicon.png" />
 </head>
 
 <body>
-    <section class="ftco-section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-6 text-center mb-5">
-                    {{-- <h2 class="heading-section">Login #05</h2> --}}
+  <div class="container-scroller">
+    <div class="container-fluid page-body-wrapper full-page-wrapper">
+      <div class="content-wrapper d-flex align-items-center auth px-0">
+        <div class="row w-100 mx-0">
+          <div class="col-lg-4 mx-auto">
+            <div class="auth-form-light text-left py-5 px-4 px-sm-5">
+              <div class="brand-logo">
+                <img src="assets 3/images/logo.svg" alt="logo">
+              </div>
+              <h4>New here?</h4>
+              <h6 class="font-weight-light">Signing up is easy. It only takes a few steps</h6>
+              <form class="pt-3" class="user" method="POST" action="{{route('registeruser')}}">
+                <div class="form-group">
+                    @csrf
+                  <input type="text" class="form-control form-control-lg" id="exampleInputUsername1" placeholder="Username" name="name">
                 </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-7 col-lg-5">
-                    <div class="wrap">
-                        {{-- <div class="img" src="../assets 2/images/bg-1.jpg" ></div> --}}
-                        <div class="login-wrap p-4 p-md-5">
-                            <div class="d-flex">
-                                <div class="w-100">
-                                    <h3 class="mb-4">Register</h3>
-                                </div>
-                              
-                            </div>
-                            <form class="user" method="POST" action="{{route('registeruser')}}" >
-                                <div class="form-group">
-									@csrf
-                                    <input type="text" class="form-control form-control-user" id="exampleInputEmail"
-                                        aria-describedby="emailHelp" placeholder="Enter Your name..." name="name">
-                                </div>
-								<div class="form-group">
-                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
-                                        aria-describedby="emailHelp" placeholder="Enter Email Address..." name="email">
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" class="form-control form-control-user"
-                                        id="exampleInputPassword" placeholder="Password" name="password">
-                                </div>
-                                <div class="form-group">
-                                    <button class="btn btn-primary btn-user btn-block">
-                                        Register Account
-                                    </button>
-                                </div>
-                                <div class="form-group d-md-flex">
-                                    <div class="w-50 text-left">
-                                        <label class="checkbox-wrap checkbox-primary mb-0">Remember Me
-                                            <input type="checkbox" checked>
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="w-50 text-md-right">
-                                        {{-- <a href="#">Forgot Password</a> --}}
-                                    </div>
-                                </div>
-                            </form>
-                            {{-- <div class="text-center">
-                                <a class="small" href="{{route("register")}}">Create an Account!</a>
-                            </div> --}}
-                        </div>
-                    </div>
+                <div class="form-group">
+                  <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email" name="email">
                 </div>
+                <div class="form-group">
+                    <input type="number" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="nipd" name="nipd">
+                  </div>
+                <div class="form-group">
+                  <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password" name="password">
+                </div>
+                <div class="mb-4">
+                  <div class="form-check">
+                    <label class="form-check-label text-muted">
+                      <input type="checkbox" class="form-check-input">
+                      I agree to all Terms & Conditions
+                    </label>
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <button class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">SIGN UP</button>
+                </div>
+                <div class="text-center mt-4 font-weight-light">
+                  Already have an account? <a href="login.html" class="text-primary">Login</a>
+                </div>
+              </form>
             </div>
+          </div>
         </div>
-    </section>
-
-    <script src="../assets 2/js/jquery.min.js"></script>
-    <script src="../assets 2/js/popper.js"></script>
-    <script src="../assets 2/js/bootstrap.min.js"></script>
-    <script src="../assets 2/js/main.js"></script>
-
+      </div>
+      <!-- content-wrapper ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="assets 3/js/off-canvas.js"></script>
+  <script src="assets 3/js/hoverable-collapse.js"></script>
+  <script src="assets 3/js/template.js"></script>
+  <script src="assets 3/js/settings.js"></script>
+  <script src="assets 3/js/todolist.js"></script>
+  <!-- endinject -->
 </body>
 
 </html>
