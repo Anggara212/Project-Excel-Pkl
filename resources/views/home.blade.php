@@ -12,22 +12,20 @@
   <link rel="stylesheet" href="assets 3/vendors/css/vendor.bundle.base.css">
   <!-- endinject -->
   <!-- Plugin css for this page -->
-  <link rel="stylesheet" href="assets 3/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
-  <link rel="stylesheet" href="assets 3/vendors/ti-icons/css/themify-icons.css">
-  <link rel="stylesheet" type="text/css" href="assets 3/js/select.dataTables.min.css">
   <!-- End plugin css for this page -->
   <!-- inject:css -->
   <link rel="stylesheet" href="assets 3/css/vertical-layout-light/style.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="assets 3/images/favicon.png" />
 </head>
+
 <body>
   <div class="container-scroller">
-    <!-- partial:partials/_navbar.html -->
+    <!-- partial:../../partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="assets 3/images/logo.svg" class="mr-2" alt="logo"/></a>
-        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets 3/images/logo-mini.svg" alt="logo"/></a>
+        <a class="navbar-brand brand-logo mr-5" href="../../index.html"><img src="assets 3/images/primago.png" class="mr-2" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="assets 3/images/primago.png" alt="logo"/></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -41,7 +39,7 @@
                   <i class="icon-search"></i>
                 </span>
               </div>
-              <input type="text" class="form-control" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search">
+              <input type="text" class="form-control" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search" >
             </div>
           </li>
         </ul>
@@ -104,13 +102,13 @@
                 Settings
               </a>
               <a class="dropdown-item" href="{{route('login')}}">
-                <i class="ti-power-off text-primary" ></i>
+                <i class="ti-power-off text-primary"></i>
                 Logout
               </a>
             </div>
           </li>
           <li class="nav-item nav-settings d-none d-lg-flex">
-            <a class="nav-link" href="">
+            <a class="nav-link" href="#">
               <i class="icon-ellipsis"></i>
             </a>
           </li>
@@ -122,7 +120,7 @@
     </nav>
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
-      <!-- partial:partials/_settings-panel.html -->
+      <!-- partial:../../partials/_settings-panel.html -->
       <div class="theme-setting-wrapper">
         <div id="settings-trigger"><i class="ti-settings"></i></div>
         <div id="theme-settings" class="settings-panel">
@@ -236,7 +234,7 @@
             </div>
             <ul class="chat-list">
               <li class="list active">
-                <div class="profile"><img src="assets 3/images/faces/face1.jpg" alt="image"><span class="online"></span></div>
+                <div class="profile"><img src="../../images/faces/face1.jpg" alt="image"><span class="online"></span></div>
                 <div class="info">
                   <p>Thomas Douglas</p>
                   <p>Available</p>
@@ -244,7 +242,7 @@
                 <small class="text-muted my-auto">19 min</small>
               </li>
               <li class="list">
-                <div class="profile"><img src="assets 3/images/faces/face2.jpg" alt="image"><span class="offline"></span></div>
+                <div class="profile"><img src="../../images/faces/face2.jpg" alt="image"><span class="offline"></span></div>
                 <div class="info">
                   <div class="wrapper d-flex">
                     <p>Catherine</p>
@@ -255,7 +253,7 @@
                 <small class="text-muted my-auto">23 min</small>
               </li>
               <li class="list">
-                <div class="profile"><img src="assets 3/images/faces/face3.jpg" alt="image"><span class="online"></span></div>
+                <div class="profile"><img src="../../images/faces/face3.jpg" alt="image"><span class="online"></span></div>
                 <div class="info">
                   <p>Daniel Russell</p>
                   <p>Available</p>
@@ -263,7 +261,7 @@
                 <small class="text-muted my-auto">14 min</small>
               </li>
               <li class="list">
-                <div class="profile"><img src="assets 3/images/faces/face4.jpg" alt="image"><span class="offline"></span></div>
+                <div class="profile"><img src="../../images/faces/face4.jpg" alt="image"><span class="offline"></span></div>
                 <div class="info">
                   <p>James Richardson</p>
                   <p>Away</p>
@@ -271,7 +269,7 @@
                 <small class="text-muted my-auto">2 min</small>
               </li>
               <li class="list">
-                <div class="profile"><img src="assets 3/images/faces/face5.jpg" alt="image"><span class="online"></span></div>
+                <div class="profile"><img src="../../images/faces/face5.jpg" alt="image"><span class="online"></span></div>
                 <div class="info">
                   <p>Madeline Kennedy</p>
                   <p>Available</p>
@@ -279,7 +277,7 @@
                 <small class="text-muted my-auto">5 min</small>
               </li>
               <li class="list">
-                <div class="profile"><img src="assets 3/images/faces/face6.jpg" alt="image"><span class="online"></span></div>
+                <div class="profile"><img src="../../images/faces/face6.jpg" alt="image"><span class="online"></span></div>
                 <div class="info">
                   <p>Sarah Graves</p>
                   <p>Available</p>
@@ -292,7 +290,7 @@
         </div>
       </div>
       <!-- partial -->
-      <!-- partial:partials/_sidebar.html -->
+      <!-- partial:../../partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
@@ -304,12 +302,24 @@
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
               <i class="icon-grid-2 menu-icon"></i>
-              <span class="menu-title">Tables</span>
+              <span class="menu-title">Table</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="{{route('santri')}}">Basic table</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{route("santri")}}">Tables siswa</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#user" aria-expanded="false" aria-controls="user">
+              <i class="icon-head menu-icon"></i>
+              <span class="menu-title">Users</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="user">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/users">Data User</a></li>
               </ul>
             </div>
           </li>
@@ -322,23 +332,8 @@
             <div class="col-md-12 grid-margin">
               <div class="row">
                 <div class="col-12 col-xl-8 mb-4 mb-xl-0">
-                  <h3 class="font-weight-bold">Welcome Aamir</h3>
+                  <h3 class="font-weight-bold">Welcome to primago!</h3>
                   <h6 class="font-weight-normal mb-0">All systems are running smoothly! You have <span class="text-primary">3 unread alerts!</span></h6>
-                </div>
-                <div class="col-12 col-xl-4">
-                 <div class="justify-content-end d-flex">
-                  <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
-                    <button class="btn btn-sm btn-light bg-white dropdown-toggle" type="button" id="dropdownMenuDate2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                     <i class="mdi mdi-calendar"></i> Today (10 Jan 2021)
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuDate2">
-                      <a class="dropdown-item" href="#">January - March</a>
-                      <a class="dropdown-item" href="#">March - June</a>
-                      <a class="dropdown-item" href="#">June - August</a>
-                      <a class="dropdown-item" href="#">August - November</a>
-                    </div>
-                  </div>
-                 </div>
                 </div>
               </div>
             </div>
@@ -879,7 +874,7 @@
                   <ul class="icon-data-list">
                     <li>
                       <div class="d-flex">
-                        <img src="assets 3/images/faces/face1.jpg" alt="user">
+                        <img src="images/faces/face1.jpg" alt="user">
                         <div>
                           <p class="text-info mb-1">Isabella Becker</p>
                           <p class="mb-0">Sales dashboard have been created</p>
@@ -889,7 +884,7 @@
                     </li>
                     <li>
                       <div class="d-flex">
-                        <img src="assets 3/images/faces/face2.jpg" alt="user">
+                        <img src="images/faces/face2.jpg" alt="user">
                         <div>
                           <p class="text-info mb-1">Adam Warren</p>
                           <p class="mb-0">You have done a great job #TW111</p>
@@ -899,7 +894,7 @@
                     </li>
                     <li>
                       <div class="d-flex">
-                      <img src="assets 3/images/faces/face3.jpg" alt="user">
+                      <img src="images/faces/face3.jpg" alt="user">
                      <div>
                       <p class="text-info mb-1">Leonard Thornton</p>
                       <p class="mb-0">Sales dashboard have been created</p>
@@ -909,7 +904,7 @@
                     </li>
                     <li>
                       <div class="d-flex">
-                        <img src="assets 3/images/faces/face4.jpg" alt="user">
+                        <img src="images/faces/face4.jpg" alt="user">
                         <div>
                           <p class="text-info mb-1">George Morrison</p>
                           <p class="mb-0">Sales dashboard have been created</p>
@@ -919,7 +914,7 @@
                     </li>
                     <li>
                       <div class="d-flex">
-                        <img src="assets 3/images/faces/face5.jpg" alt="user">
+                        <img src="images/faces/face5.jpg" alt="user">
                         <div>
                         <p class="text-info mb-1">Ryan Cortez</p>
                         <p class="mb-0">Herbs are fun and easy to grow.</p>
@@ -977,29 +972,20 @@
     <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
-
   <!-- plugins:js -->
   <script src="assets 3/vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page -->
-  <script src="assets 3/vendors/chart.js/Chart.min.js"></script>
-  <script src="assets 3/vendors/datatables.net/jquery.dataTables.js"></script>
-  <script src="assets 3/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
-  <script src="assets 3/js/dataTables.select.min.js"></script>
-
   <!-- End plugin js for this page -->
   <!-- inject:js -->
-  <script src="assets 3/off-canvas.js"></script>
-  <script src="assets 3/hoverable-collapse.js"></script>
-  <script src="assets 3/template.js"></script>
-  <script src="assets 3/settings.js"></script>
+  <script src="assets 3/js/off-canvas.js"></script>
+  <script src="assets 3/js/hoverable-collapse.js"></script>
+  <script src="assets 3/js/template.js"></script>
+  <script src="assets 3/js/settings.js"></script>
   <script src="assets 3/js/todolist.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
-  <script src="assets 3/js/dashboard.js"></script>
-  <script src="assets 3/js/Chart.roundedBarCharts.js"></script>
   <!-- End custom js for this page-->
 </body>
 
 </html>
-

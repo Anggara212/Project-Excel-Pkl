@@ -13,7 +13,7 @@ class SantriController extends Controller
     
     public function index(){
         $data = santri::paginate(5);
-        return view('santri\santri',compact('data'));
+        return view('santri/santri',compact('data'));
     }
     public function tambahsantri(){
 

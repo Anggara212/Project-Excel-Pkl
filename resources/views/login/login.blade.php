@@ -27,17 +27,17 @@
           <div class="col-lg-4 mx-auto">
             <div class="auth-form-light text-left py-5 px-4 px-sm-5">
               <div class="brand-logo">
-                <img src="assets 3/images/logo.svg" alt="logo">
+                <img src="assets 3/images/primago.png" alt="logo">
               </div>
               <h4>Hello! let's get started</h4>
               <h6 class="font-weight-light">Sign in to continue.</h6>
               <form class="pt-3" action="{{route('loginproses')}}" class="user" method="POST">
                 <div class="form-group">
                     @csrf
-                  <input type="text" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="nipd" name="email">
+                  <input type="email" class="form-control form-control-lg"  name="email" placeholder="email" >
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password" name="password">
+                  <input type="password" class="form-control form-control-lg"  name="password" placeholder="password">
                 </div>
                 <div class="mt-3">
                   <button class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">SIGN IN</button>
@@ -51,11 +51,7 @@
                   </div>
                   <a href="#" class="auth-link text-black">Forgot password?</a>
                 </div>
-                <div class="mb-2">
-                  <button type="button" class="btn btn-block btn-facebook auth-form-btn">
-                    <i class="ti-facebook mr-2"></i>Connect using facebook
-                  </button>
-                </div>
+               
                 <div class="text-center mt-4 font-weight-light">
                   Don't have an account? <a href="{{route('register')}}" class="text-primary">Create</a>
                 </div>
@@ -70,7 +66,7 @@
   </div>
   <!-- container-scroller -->
   <!-- plugins:js -->
-  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <script src="assest 3/vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page -->
   <!-- End plugin js for this page -->

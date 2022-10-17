@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SantriController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -52,6 +53,15 @@ Route::post('/registeruser', [LoginController::class, 'registeruser'])->name('re
 Route::post('/loginproses', [LoginController::class, 'loginproses'])->name('loginproses');
 
 // end login
+
+// user
+
+Route::get('/users', [UserController::class, 'index'])->name('Users');
+Route::get('/tambahuser', [UserController::class,'tambahuser'])->name('tambahuser');
+Route::post('/insertuser', [UserController::class,'store'])->name('insertuser');
+Route::get('/tampilanuser/{id}', [UserController::class,'tampilanuser'])->name('tampilanuser');
+Route::put('/updateuser/{id}', [UserController::class,'update'])->name('updateuser');
+Route::get('/deleteuser/{id}', [UserController::class,'destroy'])->name('deleteuser');
 
 // auth
 

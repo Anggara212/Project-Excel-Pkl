@@ -13,7 +13,7 @@
   <a href="{{route('tambahSantri')}}" type="button" class="btn btn-success  ">Tambah +</a>
   <a href="Santri/export/" class="btn btn-success my-3" target="_blank">EXPORT EXCEL</a>
   <div class="row">
-      <table class="table mx-4">
+      <table class="table mx-4 table-bordered">
           <thead>
               <tr>
                   <td scope="col">#</td>
@@ -57,4 +57,5 @@
 </div>
     </tbody>
   </table>
+  </html>
 @endsection

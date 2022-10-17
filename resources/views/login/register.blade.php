@@ -27,23 +27,23 @@
           <div class="col-lg-4 mx-auto">
             <div class="auth-form-light text-left py-5 px-4 px-sm-5">
               <div class="brand-logo">
-                <img src="assets 3/images/logo.svg" alt="logo">
+                <img src="assets 3/images/primago.png" alt="logo">
               </div>
               <h4>New here?</h4>
               <h6 class="font-weight-light">Signing up is easy. It only takes a few steps</h6>
               <form class="pt-3" class="user" method="POST" action="{{route('registeruser')}}">
+                @csrf
                 <div class="form-group">
-                    @csrf
-                  <input type="text" class="form-control form-control-lg" id="exampleInputUsername1" placeholder="Username" name="name">
+                  <input type="text" class="form-control form-control-lg" id="name" placeholder="Username" name="name"  >
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email" name="email">
+                  <input type="email" class="form-control form-control-lg" id="email" placeholder="Email" name="email"  >
                 </div>
                 <div class="form-group">
-                    <input type="number" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="nipd" name="nipd">
+                    <input type="number" class="form-control form-control-lg" id="nipd" placeholder="nipd" name="nipd" >
                   </div>
                 <div class="form-group">
-                  <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password" name="password">
+                  <input type="password" class="form-control form-control-lg" id="password" placeholder="Password" name="password"  >
                 </div>
                 <div class="mb-4">
                   <div class="form-check">
@@ -57,7 +57,7 @@
                   <button class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">SIGN UP</button>
                 </div>
                 <div class="text-center mt-4 font-weight-light">
-                  Already have an account? <a href="login.html" class="text-primary">Login</a>
+                  Already have an account? <a href="{{route('login')}}" class="text-primary">Login</a>
                 </div>
               </form>
             </div>
@@ -70,7 +70,7 @@
   </div>
   <!-- container-scroller -->
   <!-- plugins:js -->
-  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <script src="assets 3/vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page -->
   <!-- End plugin js for this page -->
